@@ -1,9 +1,8 @@
-import React , {} from 'react';                
+import React , {Component} from 'react';                
 import PropTypes from 'prop-types';
+import EmojiBox from './EmojiBox'
 
-import EmojiBox from '../components/EmojiBox'
-
-class EmojiBox extends components {
+class SearchResult extends Component {
     static propTypes = {
         emojiData: PropTypes.array
     };
@@ -11,16 +10,17 @@ class EmojiBox extends components {
     render(){
         return (
             <div className = "emojiResult">
-                {this.props.emojiData.map(emojiData => (
-                    <EmojiResultRow
-                    key={emojiData.title}
-                    symbol={emojiData.symbol}
-                    title={emojiData.title}
+                {this.props.emojiData.map(data => (
+                <EmojiBox
+                    key={data.title}
+                    symbol={data.symbol}
+                    title={data.title}
                 />
                 ))}
+
             </div>
         );
     }
 }
 
-export default EmojiBox
+export default SearchResult

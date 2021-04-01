@@ -1,4 +1,4 @@
-import PropTypes from "props-types";
+import PropTypes from "prop-types";
 import React, {Component} from "react";
 
 class EmojiBox extends Component {
@@ -8,8 +8,8 @@ class EmojiBox extends Component {
     };
 
     render() {
-        const HexCode = this.props.symbol.codePointAt(0).toString(6);
-        const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
+        const HexCode = this.props.symbol.codePointAt(0).toString(16);
+        const src = `//cdn.jsdelivr.net/emojione/assets/png/${HexCode}.png`;
         return (
             <div className="emojiBox" >
                 <img alt={this.props.title} src={src} />
