@@ -3,6 +3,8 @@ import React, {
 } from "react";
 import InputSearch from "./components/InputSearch"
 import SearchEmoji from "./components/SearchEmoji"
+import SearchResult from "./components/SearchResult"
+
 
 class App extends Component {
 
@@ -22,7 +24,10 @@ class App extends Component {
 
   render (){
     return (
+      <div>
       <InputSearch textChange={this.handleSearchChange} />
+      <SearchResult emojiData={this.state.SearchEmoji} />
+      </div>
     );
   }
 }
