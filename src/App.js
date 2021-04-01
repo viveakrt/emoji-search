@@ -1,17 +1,17 @@
 import React, {
   Component
 } from "react";
+import Header from "./components/Header";
 import InputSearch from "./components/InputSearch"
 import SearchEmoji from "./components/SearchEmoji"
 import SearchResult from "./components/SearchResult"
-
 
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      SearchEmoji: SearchEmoji("", 20)
+      SearchEmoji: SearchEmoji("", 1000)
     };
   }
 
@@ -25,6 +25,7 @@ class App extends Component {
   render (){
     return (
       <div>
+      <Header />
       <InputSearch textChange={this.handleSearchChange} />
       <SearchResult emojiData={this.state.SearchEmoji} />
       </div>
