@@ -11,7 +11,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      SearchEmoji: SearchEmoji("", 1000)
+      SearchEmoji: SearchEmoji("", 600)
     };
   }
 

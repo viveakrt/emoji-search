@@ -76,3 +76,23 @@ input:focus{
   justify-content: center;
   font-family: "Montserrat", sans-serif;
 }
+
+@media screen and (max-width : 800px) {
+  input{
+    width: 100%;
+  }
+  .emojiResult{
+    display: flex;
+  }
+  .emojiBox{
+    width: 15%;
+  }
+  .emojiBox image{
+    width: 100%;
+    height: 70%;
+
+  }
+  .emojiBox span{
+    font-size: .8em;
+  }
+}
