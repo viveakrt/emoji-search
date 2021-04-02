@@ -68,6 +68,7 @@ input:focus{
 .emojiResult{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   font-family: "Montserrat", sans-serif;
 }
 
