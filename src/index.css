@@ -75,8 +75,28 @@ input:focus{
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  font-size: large;
+}
+p{
+  position: absolute;
+  display: none;
+  font-size: smaller;
+  transition: 2s;
+  margin: 0px;
+  padding: 0px;
+}
+.emojiBox:hover > p{
+  display: block;
+  content: 'click to Copy';
 }
 
+h2{
+  margin: auto;
+}
+
+.emojiBox:first-child{
+  width: 100%;
+}
 @media screen and (max-width : 800px) {
   input{
     width: 100%;
