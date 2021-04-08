@@ -25,9 +25,9 @@ class EmojiBox extends Component {
 					})
 				}
 			>
-				<div className="emojiBox" >
-					<p> {this.state.text1} </p> 
-                    <img alt={this.props.title} src={src} />
+				<div className="emojiBox">
+					<p> {this.state.text1} </p>
+					<img alt={this.props.title} src={src} />
 					<span className="title"> {this.props.title} </span>
 				</div>
 			</CopyToClipboard>
